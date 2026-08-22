@@ -108,7 +108,7 @@ def generate_cover(api_key, song_data, lyrics, style):
 
     try:
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-pro",
+            model_name="gemini-1.5-pro-latest",
             system_instruction=system_prompt
         )
         user_prompt = f"Lagu dan Penyanyi Asli: {song_data}\nStyle Cover: {style}\nLirik Original:\n{lyrics}"
